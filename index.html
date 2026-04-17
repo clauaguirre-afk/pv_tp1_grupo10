@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel principal</title>
+  <link rel="stylesheet" href="/css/estilos.css" >
 </head>
 
-<body>
+<body class="contenedor2">
   <header>
-    <h1>Bienvenido a ProjectManager</h1>
-    <p> Web para la Gestión de Proyectos Educativos</p>
     <nav>
+      <h1 id="titulo">Bienvenido a ProjectManager</h1>
+      <p class="description"> Web para la Gestión de Proyectos Educativos</p>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
@@ -21,10 +22,10 @@
   </header>
   <main>
     <section>
-      <h2>Estadísticas</h2>
+      <h2 id="subtitulo">Estadísticas</h2>
       <article>
-        <h3>Proyectos totales</h3>
-        <ol>
+        <h3 id="apartado">Proyectos totales</h3>
+        <ol class="datos">
           <li>TP1 de Programación Visual</li>
           <li>Actividad 1 de Base de Datos II</li>
           <li>TP1 de Redes</li>
@@ -33,15 +34,15 @@
         </ol>
       </article>
       <article>
-        <h3>Tareas para hoy</h3>
-        <ul>
+        <h3 id="apartado">Tareas para hoy</h3>
+        <ul class="datos">
           <li>Reunión de equipo a las 22 hs</li>
           <li>Agregar estilo a la página web - TP1_pv</li>
         </ul>
       </article>
       <article>
-        <h3>Mensajes pendientes</h3>
-        <ul>
+        <h3 id="apartado">Mensajes pendientes</h3>
+        <ul class="datos">
           <li><a href="">Carolina Apaza - Corrección de actividad 1 - 12-04-26 15:47hs</a></li>
           <li><a href="">Ariel Vega - Asistencia clase 1 - 10-04-26 12:21hs</a></li>
           <li><a href="">Líder del proyecto - Nuevas tareas - 07-04-26 18:16hs</a></li>
@@ -49,8 +50,8 @@
       </article>
     </section>
     <section>
-      <h2>Novedades</h2>
-      <ul>
+      <h2 id="subtitulo">Novedades</h2>
+      <ul class="datos">
         <li>Emanuel ha creado el repositorio pv_tp1_grupo10</li>
         <li>Micaela modificó el archivo index.html del proyecto TP1</li>
         <li>María subió la imagen IMG0001.jpg</li>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto</title>
-    <link rel="stylesheet" href="/pv_tp1_grupo10/css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
     <!--<style>
         h1{
             text-align: center;
@@ -28,7 +28,7 @@
 <body class="contenedor2">
     <head>
         <nav>
-            <h1 style="color: blue; font-size: 60px;">Proyectos</h1>
+            <h1 id="titulo"><!--style="color: blue; font-size: 60px;"-->Proyectos</h1>
             <ul>
                 <li><a href="index.html" >Inicio</a></li>
                 <li><a href="detalle.html">Detalles</a></li>
@@ -36,21 +36,21 @@
             </ul>
 
         </nav>
-        <h2>Listado Proyecto</h2>
+        <h2 id="subtitulo">Listado Proyecto</h2>
         <aside>
-            <label>Categoria: </label>
+            <label class="categoria">Categoria: </label>
             <select name="Categoria" id="Categoria">
                 <option value="todos">Todos</option>
                 <option value="web">Web</option>
                 <option value="pdf">PDF</option>
             </select>
-            <label>Años: </label>
+            <label class="categoria">Años: </label>
             <select name="Años" id="Años">
                 <option value="todos">Todos</option>
                 <option value="2025">2025</option>
                 <option value="2026">2026</option>
             </select>
-            <label>Estado: </label>
+            <label class="categoria">Estado: </label>
             <select name="Estado" id="Estado">
                 <option value="todos">Todos</option>
                 <option value="emepezo">En Curso</option>
@@ -60,16 +60,16 @@
 
         <div>
             <div>
-                <h3>TP1 de Programación Visual</h3>
+                <h3 id="apartado">TP1 de Programación Visual</h3>
                 <img src="img_pv.png" alt="Programacion Visual">
-                <p>Descripcion: La programación visual (VPL) es un paradigma que permite crear software manipulando elementos gráficos (bloques, nodos, iconos) en lugar de escribir código de texto. Facilita la creación de lógica mediante arrastrar y soltar, siendo ideal para principiantes, educación y prototipado rápido, eliminando la complejidad de la sintaxis textual. </p>
-                <p>Categoria: Wed</p>
+                <p class="datos">Descripcion: La programación visual (VPL) es un paradigma que permite crear software manipulando elementos gráficos (bloques, nodos, iconos) en lugar de escribir código de texto. Facilita la creación de lógica mediante arrastrar y soltar, siendo ideal para principiantes, educación y prototipado rápido, eliminando la complejidad de la sintaxis textual. </p>
+                <p class="categoria">Categoria: Wed</p>
                 <a href="https://virtual.unju.edu.ar/pluginfile.php/991876/mod_resource/content/3/Trabajo%20Pr%C3%A1ctico%20N%C2%B0%201.pdf">Ver detalle</a>
             </div>
             <div>
-                <h3>Actividad 1 de Base de Datos II</h3>
+                <h3 id="apartado">Actividad 1 de Base de Datos II</h3>
                 <img src="img-bd.jpeg" alt="imagen de base de datos">
-                <p>Descripcion: Va a empezar a crear su primera base de datos Oracle. Debe tener en cuenta que en un futuro cercano, será
+                <p class="datos">Descripcion: Va a empezar a crear su primera base de datos Oracle. Debe tener en cuenta que en un futuro cercano, será
                     necesario crear varias bases de datos similares. Por lo tanto, decide crear su base de datos ORCL, así como una
                     plantilla de base de datos y los archivos de comandos de creación de la base de datos. Los archivos de comandos
                     se localizan en el directorio:
@@ -77,32 +77,35 @@
                     VISIÓN GENERAL DE PRÁCTICA: USO DE DBCA En esta práctica se abordan los siguientes temas:
                      • Creación de una base de datos ORCL mediante DBCA.
                      • Desbloqueo del esquema HR.</p>
-                <p>Categoria: Wed</p>
+                <p class="categoria">Categoria: Wed</p>
                 <a href="https://virtual.unju.edu.ar/pluginfile.php/796130/mod_resource/content/2/TP01_U03_Creaci%C3%B3n%20de%20una%20BD.pdf">Ver detalle</a>
             </div>
             <div>
-                <h3>TP1 de Redes</h3>
+                <h3 id="apartado">TP1 de Redes</h3>
                 <img src="img-rede1.png" alt="Redes 1">
-                <p>Descripcion: Definiciones  y  Conceptos  Básicos  de  Redes  y  Transmisión  de  datos.  Definición  de  Red  de Computadoras.  Tipos  de  Redes. a_  Según ubicación  geográfica:  LAN  (Definición).  WAN (Definición). b_ Según la forma en que se comparten los recursos: Par a Par (Definición). Cliente-Servidor (Definición). Ventajas y desventajas de cada tipo. </p>
-                <p>Categoria: PDF</p>
+                <p class="datos">Descripcion: Definiciones  y  Conceptos  Básicos  de  Redes  y  Transmisión  de  datos.  Definición  de  Red  de Computadoras.  Tipos  de  Redes. a_  Según ubicación  geográfica:  LAN  (Definición).  WAN (Definición). b_ Según la forma en que se comparten los recursos: Par a Par (Definición). Cliente-Servidor (Definición). Ventajas y desventajas de cada tipo. </p>
+                <p class="categoria">Categoria: PDF</p>
                 <a href="https://virtual.unju.edu.ar/pluginfile.php/792373/mod_resource/content/2/tp1_redes1%202026.pdf">Ver detalle</a>
             </div>
             <div>
-                <h3>Cuestionarios de Programacion estructurada</h3>
+                <h3 id="apartado">Cuestionarios de Programacion estructurada</h3>
                 <img src="img-pe.png" alt="programacion estructurada">
-                <p>Descripcion: Los cuestionario son un requisito para poder rendir los parciales y deben aprobar con el 60% o mas. Los cuestionario tiene los contenido de cada trabajos practicos</p>
-                <p>Categoria: Web</p>
+                <p class="datos">Descripcion: Los cuestionario son un requisito para poder rendir los parciales y deben aprobar con el 60% o mas. Los cuestionario tiene los contenido de cada trabajos practicos</p>
+                <p class="categoria">Categoria: Web</p>
                 <a href="https://virtual.unju.edu.ar/course/view.php?id=2514&section=7#tabs-tree-start">Ver detalle</a>
             </div>
             <div>
-                <h3>Cartilla de ingles III</h3>
+                <h3 id="apartado">Cartilla de ingles III</h3>
                 <img src="img-ingles.jpeg" alt="ingles">
-                <p>Descripcion: Para la cursada se debe tener la cartilla impresa para realizar los ejercicio. La cartilla combina gramática, vocabulario y práctica comunicativa aplicada al contexto de la programación </p>
-                <p>Categoria: PDF</p>
+                <p class="datos">Descripcion: Para la cursada se debe tener la cartilla impresa para realizar los ejercicio. La cartilla combina gramática, vocabulario y práctica comunicativa aplicada al contexto de la programación </p>
+                <p class="categoria">Categoria: PDF</p>
                 <a href="https://virtual.unju.edu.ar/pluginfile.php/992325/mod_resource/content/1/WORKBOOK%20-%20UNITS%201%20-%202%20-%203.pdf">Ver detalle</a>
             </div>
         </div>
 
     </head>
+    <footer>
+        <p>&copy; 2026 - Programación Visual - Facultad de Ingeniería</p>
+    </footer>
 </body>
 </html>

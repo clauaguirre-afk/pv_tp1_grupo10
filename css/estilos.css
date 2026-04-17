@@ -1,6 +1,7 @@
 h1{
     text-align: center;
 } 
+
 nav{
     font-style: italic;
     background-color: rgb(61, 148, 211);
@@ -23,9 +24,39 @@ nav a:hover{
 }
 .contenedor2{
     background-color: rgb(173, 216, 230);
-
 }
 img{
     max-width: 300px;
-    
+}
+#titulo {
+    color: blue;
+    font-size: 60px;
+}
+.description {
+    color: rgb(60, 19, 101);
+    text-align: center;
+}
+#subtitulo {
+    color: red; 
+}
+#subtitulo1 {
+    color: red;
+    text-align: center;
+}
+.datos {
+    color: rebeccapurple;
+}
+.datos1 {
+    color: rebeccapurple;
+    text-align: center;
+}
+#apartado {
+    color: rgb(91, 105, 63);
+}
+#apartado1 {
+    color: rgb(91, 105, 63);
+    text-align: center;
+}
+.categoria {
+    color: rgb(34, 34, 167);
 }
