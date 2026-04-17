@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+} 
+nav{
+    font-style: italic;
+    background-color: rgb(61, 148, 211);
+    display: grid;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+nav a{
+    color: aliceblue;
+}
+nav a:hover{
+    color: blue;
+}
+.contenedor2{
+    background-color: rgb(173, 216, 230);
+
+}
+img{
+    max-width: 300px;
+    
+}
