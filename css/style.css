@@ -61,3 +61,16 @@ img{
 .categoria {
     color: rgb(34, 34, 167);
 }
+.contenedor-index{
+    display: flex;
+    height: auto;
+}
+.izquierda{
+    flex:3;
+    padding: 20px;
+}
+.derecha{
+    background-color: rgb(180, 191, 255);
+    flex:1;
+    padding: 20px;
+}
