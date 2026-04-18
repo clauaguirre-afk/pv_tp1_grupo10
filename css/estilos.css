@@ -67,80 +67,6 @@ section, article {
 
 /* -----------------------*/
 
-h1{
-    text-align: center;
-    
-} 
-
-nav{
-    font-style: italic;
-    background-color: rgb(61, 148, 211);
-    display: grid;
-    text-align: center;
-}
-nav ul{
-    display: flex;
-    margin-bottom: 10px;
-    list-style: none;
-    margin-top: 10px;
-    justify-content: center;
-    gap: 20px;
-}
-nav a{
-    color: aliceblue;
-}
-nav a:hover{
-    color: blue;
-}
-.contenedor2{
-    background-color: rgb(173, 216, 230);
-}
-img{
-    max-width: 300px;
-}
-#titulo {
-    color: blue;
-    font-size: 60px;
-}
-.description {
-    color: rgb(60, 19, 101);
-    text-align: center;
-}
-#subtitulo {
-    color: red; 
-}
-#subtitulo1 {
-    color: red;
-    text-align: center;
-}
-.datos {
-    color: rebeccapurple;
-}
-.datos1 {
-    color: rebeccapurple;
-    text-align: center;
-}
-#apartado {
-    color: rgb(91, 105, 63);
-}
-#apartado1 {
-    color: rgb(91, 105, 63);
-    text-align: center;
-}
-.categoria {
-    color: rgb(34, 34, 167);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 h1{
     text-align: center;
@@ -204,17 +130,4 @@ img{
 }
 .categoria {
     color: rgb(34, 34, 167);
-}
-.contenedor-index{
-    display: flex;
-    height: auto;
-}
-.izquierda{
-    flex:3;
-    padding: 20px;
-}
-.derecha{
-    background-color: rgb(180, 191, 255);
-    flex:1;
-    padding: 20px;
 }
