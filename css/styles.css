@@ -1,9 +1,9 @@
 :root {
-  --color-principal:  #1e293b;   /* azul oscuro, lo usamos para header/footer */
-  --color-secundario: #3b82f6;   /* azul más brillante para botones */
-  --color-fondo:      #f1f5f9;   /* fondo clarito */
-  --color-texto:      #0f172a;   /* texto principal */
-  --color-card:       #ffffff;   /* fondo de las cards */
+  --color-principal: #1e293b; /* azul oscuro, lo usamos para header/footer */
+  --color-secundario: #3b82f6; /* azul más brillante para botones */
+  --color-fondo: #f1f5f9; /* fondo clarito */
+  --color-texto: #0f172a; /* texto principal */
+  --color-card: #ffffff; /* fondo de las cards */
 }
 
 /* reset porque si no todo viene con estilos raros */
@@ -157,7 +157,7 @@ article {
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
 
@@ -273,4 +273,3 @@ ul li {
   background-color: #1d4ed8;
   text-decoration: none;
 }
-
