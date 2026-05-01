@@ -1,23 +1,19 @@
 :root {
-  --color-principal:  #1e293b;   /* header / footer */
-  --color-secundario: #3b82f6;   /* botones / hover */
-  --color-fondo:      #f1f5f9;   /* fondo general */
+  --color-principal:  #1e293b;   /* azul oscuro, lo usamos para header/footer */
+  --color-secundario: #3b82f6;   /* azul más brillante para botones */
+  --color-fondo:      #f1f5f9;   /* fondo clarito */
   --color-texto:      #0f172a;   /* texto principal */
-  --color-card:       #ffffff;   /* tarjetas */
+  --color-card:       #ffffff;   /* fondo de las cards */
 }
 
-/* =========================
-   RESET
-========================= */
+/* reset porque si no todo viene con estilos raros */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
+/* contenedor general de toda la página */
 .contenedor2 {
   font-family: Arial, sans-serif;
   font-size: 11pt;
@@ -29,15 +25,14 @@
   flex-direction: column;
 }
 
-/* =========================
-   HEADER + NAV (Flexbox)
-========================= */
+/* header */
 header {
   background-color: var(--color-principal);
   color: white;
   padding: 15px;
 }
 
+/* nav centrado */
 nav {
   display: flex;
   flex-direction: column;
@@ -56,6 +51,7 @@ nav {
   margin-top: 4px;
 }
 
+/* lista del nav */
 nav ul {
   display: flex;
   gap: 20px;
@@ -63,6 +59,7 @@ nav ul {
   margin-top: 10px;
 }
 
+/* links del nav */
 nav a {
   color: white;
   text-decoration: none;
@@ -70,6 +67,7 @@ nav a {
   border-radius: 5px;
 }
 
+/* hover del nav (resalta un poco) */
 nav a:hover {
   background-color: var(--color-secundario);
 }
@@ -83,9 +81,7 @@ nav a:focus {
   outline-offset: 2px;
 }
 
-/* =========================
-   ENLACES GENERALES
-========================= */
+/* links en general (por si aparecen en texto) */
 a {
   color: var(--color-secundario);
   text-decoration: none;
@@ -104,16 +100,12 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* para que el footer quede abajo */
 main {
   flex: 1;
 }
 
-/* =========================
-   TITULOS
-========================= */
+/* títulos de secciones */
 .subtitulo {
   font-size: 20px;
   margin: 20px 20px 10px;
@@ -123,6 +115,7 @@ main {
   border-radius: 6px;
 }
 
+/* tipo bloque destacado */
 .apartado {
   margin: 10px 0;
   background-color: var(--color-secundario);
@@ -131,15 +124,14 @@ main {
   border-radius: 8px;
 }
 
-/* =========================
-   TEXTO
-========================= */
+/* textos normales */
 .datos {
   font-size: 13px;
   color: var(--color-texto);
   margin-bottom: 6px;
 }
 
+/* etiqueta tipo badge */
 .categoria {
   display: inline-block;
   font-size: 12px;
@@ -151,6 +143,7 @@ main {
   margin-top: 6px;
 }
 
+/* número grande (lo usamos para stats) */
 .dato-numero {
   font-size: 36px;
   font-weight: bold;
@@ -158,9 +151,7 @@ main {
   text-align: center;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* cards */
 article {
   background-color: var(--color-card);
   padding: 15px;
@@ -170,13 +161,12 @@ article {
   transition: transform 0.2s ease;
 }
 
+/* pequeño efecto cuando paso el mouse */
 article:hover {
   transform: translateY(-3px);
 }
 
-/* =========================
-   GRID INDEX
-========================= */
+/* layout del index */
 .contenedor-index {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -184,6 +174,7 @@ article:hover {
   padding: 20px;
 }
 
+/* responsive */
 @media (max-width: 768px) {
   .contenedor-index {
     grid-template-columns: 1fr;
@@ -196,13 +187,12 @@ article:hover {
   flex-direction: column;
 }
 
-/* =========================
-   SECCIONES
-========================= */
+/* secciones generales */
 section {
   margin: 20px;
 }
 
+/* contenedor interno */
 .contenido {
   background-color: var(--color-card);
   border-radius: 12px;
@@ -210,9 +200,7 @@ section {
   margin-bottom: 16px;
 }
 
-/* =========================
-   IMAGENES
-========================= */
+/* imágenes centradas */
 .img-centro {
   display: block;
   margin: 10px auto;
@@ -220,9 +208,7 @@ section {
   border-radius: 8px;
 }
 
-/* =========================
-   ASIDE (FILTROS)
-========================= */
+/* filtros (aside) */
 aside {
   display: flex;
   flex-wrap: wrap;
@@ -240,6 +226,7 @@ aside label {
   font-weight: bold;
 }
 
+/* select */
 select {
   font-size: 13px;
   padding: 4px 10px;
@@ -250,6 +237,7 @@ select {
   cursor: pointer;
 }
 
+/* hover del select */
 select:hover {
   border-color: #1d4ed8;
 }
@@ -259,9 +247,7 @@ select:focus {
   border: 2px solid var(--color-secundario);
 }
 
-/* =========================
-   LISTAS
-========================= */
+/* listas */
 ul {
   padding-left: 20px;
 }
@@ -270,9 +256,7 @@ ul li {
   margin-bottom: 4px;
 }
 
-/* =========================
-   BOTON VER DETALLE
-========================= */
+/* botón ver más */
 .ver-detalle {
   display: inline-block;
   margin-top: 8px;
@@ -284,19 +268,9 @@ ul li {
   font-weight: bold;
 }
 
+/* hover botón */
 .ver-detalle:hover {
   background-color: #1d4ed8;
   text-decoration: none;
 }
 
-/* =========================
-   FOOTER
-========================= */
-.fot {
-  text-align: center;
-  background-color: var(--color-principal);
-  color: white;
-  padding: 12px;
-  font-size: 13px;
-  margin-top: auto;
-}
