@@ -1,145 +1,305 @@
-
+/* =========================
+   VARIABLES (PALETA ELEGANTE)
+========================= */
 :root {
-    --azul-header: rgb(61, 148, 211);
-    --celeste-fondo: rgb(173, 216, 230);
-    --azul-titulo: blue;
-    --rojo-subtitulo: red;
-    --violeta-datos: rebeccapurple;
-    --verde-apartado: rgb(91, 105, 63);
-    --texto-descripcion: rgb(60, 19, 101);
-    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --color-principal:  #1e293b;   /* header / footer */
+  --color-secundario: #3b82f6;   /* botones / hover */
+  --color-fondo:      #f1f5f9;   /* fondo general */
+  --color-texto:      #0f172a;   /* texto principal */
+  --color-card:       #ffffff;   /* tarjetas */
 }
 
-/* 2. ESTRUCTURA GENERAL (CSS Grid) */
-.header1 {
-    margin: 0;
-    font-family: var(--fuente-base);
-    background-color: var(--celeste-fondo);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contenido {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 30px; 
-    max-width: 900px; 
-    margin: 0 auto; 
-    padding: 40px 20px;
-    box-sizing: border-box;
+/* =========================
+   BODY
+========================= */
+.contenedor2 {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.fot {
-    background-color: var(--azul-header);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
+/* =========================
+   HEADER + NAV (Flexbox)
+========================= */
+header {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 15px;
 }
-
-/* 3. COMPONENTES INTERNOS (Flexbox) */
 
 nav {
-    background-color: var(--azul-header);
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo {
+  font-size: 28px;
+  color: white;
+}
+
+.description {
+  font-size: 13px;
+  color: #cbd5f5;
+  text-align: center;
+  margin-top: 4px;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0 0;
-    gap: 30px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-top: 10px;
 }
 
-section, article {
-    display: flex;
-    flex-direction: column; 
-    background-color: rgba(255, 255, 255, 0.4); 
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-/* -----------------------*/
+nav a:hover {
+  background-color: var(--color-secundario);
+}
 
-h1{
-    text-align: center;
-    
-} 
+nav a:active {
+  background-color: #2563eb;
+}
 
-nav{
-    font-style: italic;
-    background-color: rgb(61, 148, 211);
-    display: grid;
-    text-align: center;
+nav a:focus {
+  outline: 2px solid var(--color-secundario);
+  outline-offset: 2px;
 }
-nav ul{
-    display: flex;
-    margin-bottom: 10px;
-    list-style: none;
-    margin-top: 10px;
-    justify-content: center;
-    gap: 20px;
+
+/* =========================
+   ENLACES GENERALES
+========================= */
+a {
+  color: var(--color-secundario);
+  text-decoration: none;
 }
-nav a{
-    color: aliceblue;
+
+a:hover {
+  text-decoration: underline;
 }
-nav a:hover{
-    color: blue;
+
+a:active {
+  color: #1d4ed8;
 }
-.contenedor2{
-    background-color: rgb(173, 216, 230);
+
+a:focus {
+  outline: 2px solid var(--color-secundario);
+  outline-offset: 2px;
 }
-img{
-    max-width: 300px;
+
+/* =========================
+   MAIN
+========================= */
+main {
+  flex: 1;
 }
-#titulo {
-    color: blue;
-    font-size: 60px;
+
+/* =========================
+   TITULOS
+========================= */
+.subtitulo {
+  font-size: 20px;
+  margin: 20px 20px 10px;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
 }
-.description {
-    color: rgb(60, 19, 101);
-    text-align: center;
+
+.apartado {
+  margin: 10px 0;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
 }
-#subtitulo {
-    color: red; 
-}
-#subtitulo1 {
-    color: red;
-    text-align: center;
-}
+
+/* =========================
+   TEXTO
+========================= */
 .datos {
-    color: rebeccapurple;
+  font-size: 13px;
+  color: var(--color-texto);
+  margin-bottom: 6px;
 }
-.datos1 {
-    color: rebeccapurple;
-    text-align: center;
-}
-#apartado {
-    color: rgb(91, 105, 63);
-}
-#apartado1 {
-    color: rgb(91, 105, 63);
-    text-align: center;
-}
+
 .categoria {
-    color: rgb(34, 34, 167);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-secundario);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: 6px;
 }
-.contenedor-index{
-    display: flex;
-    height: auto;
+
+.dato-numero {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--color-principal);
+  text-align: center;
 }
-.izquierda{
-    flex:3;
-    padding: 20px;
+
+/* =========================
+   CARDS
+========================= */
+article {
+  background-color: var(--color-card);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
 }
-.derecha{
-    background-color: rgb(180, 191, 255);
-    flex:1;
-    padding: 20px;
+
+article:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   GRID INDEX
+========================= */
+.contenedor-index {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-index {
+    grid-template-columns: 1fr;
+  }
+}
+
+.izquierda,
+.derecha {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+section {
+  margin: 20px;
+}
+
+.contenido {
+  background-color: var(--color-card);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   IMAGENES
+========================= */
+.img-centro {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* =========================
+   ASIDE (FILTROS)
+========================= */
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--color-principal);
+  margin: 0 20px 10px;
+  border-radius: 10px;
+}
+
+aside label {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+select {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-secundario);
+  background-color: white;
+  color: var(--color-principal);
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #1d4ed8;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid var(--color-secundario);
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 4px;
+}
+
+/* =========================
+   BOTON VER DETALLE
+========================= */
+.ver-detalle {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 14px;
+  background-color: var(--color-secundario);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ver-detalle:hover {
+  background-color: #1d4ed8;
+  text-decoration: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.fot {
+  text-align: center;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 12px;
+  font-size: 13px;
+  margin-top: auto;
 }
