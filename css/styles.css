@@ -1,0 +1,305 @@
+/* =========================
+   VARIABLES (PALETA ELEGANTE)
+========================= */
+:root {
+  --color-principal:  #1e293b;   /* header / footer */
+  --color-secundario: #3b82f6;   /* botones / hover */
+  --color-fondo:      #f1f5f9;   /* fondo general */
+  --color-texto:      #0f172a;   /* texto principal */
+  --color-card:       #ffffff;   /* tarjetas */
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+.contenedor2 {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER + NAV (Flexbox)
+========================= */
+header {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo {
+  font-size: 28px;
+  color: white;
+}
+
+.description {
+  font-size: 13px;
+  color: #cbd5f5;
+  text-align: center;
+  margin-top: 4px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--color-secundario);
+}
+
+nav a:active {
+  background-color: #2563eb;
+}
+
+nav a:focus {
+  outline: 2px solid var(--color-secundario);
+  outline-offset: 2px;
+}
+
+/* =========================
+   ENLACES GENERALES
+========================= */
+a {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1d4ed8;
+}
+
+a:focus {
+  outline: 2px solid var(--color-secundario);
+  outline-offset: 2px;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+  flex: 1;
+}
+
+/* =========================
+   TITULOS
+========================= */
+.subtitulo {
+  font-size: 20px;
+  margin: 20px 20px 10px;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.apartado {
+  margin: 10px 0;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+.datos {
+  font-size: 13px;
+  color: var(--color-texto);
+  margin-bottom: 6px;
+}
+
+.categoria {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-secundario);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+
+.dato-numero {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--color-principal);
+  text-align: center;
+}
+
+/* =========================
+   CARDS
+========================= */
+article {
+  background-color: var(--color-card);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   GRID INDEX
+========================= */
+.contenedor-index {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-index {
+    grid-template-columns: 1fr;
+  }
+}
+
+.izquierda,
+.derecha {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+section {
+  margin: 20px;
+}
+
+.contenido {
+  background-color: var(--color-card);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   IMAGENES
+========================= */
+.img-centro {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* =========================
+   ASIDE (FILTROS)
+========================= */
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--color-principal);
+  margin: 0 20px 10px;
+  border-radius: 10px;
+}
+
+aside label {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+select {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-secundario);
+  background-color: white;
+  color: var(--color-principal);
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #1d4ed8;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid var(--color-secundario);
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 4px;
+}
+
+/* =========================
+   BOTON VER DETALLE
+========================= */
+.ver-detalle {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 14px;
+  background-color: var(--color-secundario);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ver-detalle:hover {
+  background-color: #1d4ed8;
+  text-decoration: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.fot {
+  text-align: center;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 12px;
+  font-size: 13px;
+  margin-top: auto;
+}
